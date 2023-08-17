@@ -1,0 +1,13 @@
+n=int(input())                              #Geting integer as input
+l=[]                                        #Creates an empty list to append odd numbers
+while n>0:                                  #am using while loop here
+  digit=n%10                                #step 1--Modulo division of n for getting reminder
+  if digit%2!=0:                            #step 2--if digit divide by two not equal to zero,we can append into our list l
+    l.append(digit)                          
+  n=n//10
+l.sort()                                    #am sorting the list from ascending order
+if len(l)>=1:                               #we have to print -1 if there is no odd number
+  print(*l)
+else:
+  print("-1")
+
